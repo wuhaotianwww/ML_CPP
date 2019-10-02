@@ -19,10 +19,44 @@
     <Filter Include="源文件\Utils">
       <UniqueIdentifier>{be291bcb-e69a-4987-a9dd-8a703937d11b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\data">
+      <UniqueIdentifier>{128738ac-7a65-44d6-be02-c7072a5fb152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\model">
+      <UniqueIdentifier>{8c3239e5-7b70-450f-85b2-74437caa0ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\model">
+      <UniqueIdentifier>{da4f8985-4038-4d8e-b5ad-7245fe41e1c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Utils\utils.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="model\LinearRE.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\utils.h">
+      <Filter>头文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="model\LinearRE.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\housing.csv">
+      <Filter>资源文件\data</Filter>
+    </None>
+    <None Include="data\housing.data">
+      <Filter>资源文件\data</Filter>
+    </None>
+    <None Include="data\test.csv">
+      <Filter>资源文件\data</Filter>
+    </None>
   </ItemGroup>
 </Project>
