@@ -23,8 +23,8 @@ private:
 
 public:
 	DataGenerator(int dim, int XY_train, int XY_test);
-	bool load_data_from_data(string path, int dim);
-
+	bool load_housing_data(string path, int dim);
+	bool load_wine_data(string path, int dim);
 };
 
 

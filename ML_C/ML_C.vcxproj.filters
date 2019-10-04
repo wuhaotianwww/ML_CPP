@@ -39,6 +39,9 @@
     <ClCompile Include="model\LinearRE.cpp">
       <Filter>源文件\model</Filter>
     </ClCompile>
+    <ClCompile Include="model\LDA.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils\utils.h">
@@ -47,15 +50,15 @@
     <ClInclude Include="model\LinearRE.h">
       <Filter>头文件\model</Filter>
     </ClInclude>
+    <ClInclude Include="model\LDA.h">
+      <Filter>头文件\model</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\housing.csv">
-      <Filter>资源文件\data</Filter>
-    </None>
     <None Include="data\housing.data">
       <Filter>资源文件\data</Filter>
     </None>
-    <None Include="data\test.csv">
+    <None Include="data\wine.data">
       <Filter>资源文件\data</Filter>
     </None>
   </ItemGroup>

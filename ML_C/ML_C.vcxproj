@@ -115,17 +115,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="model\LDA.cpp" />
     <ClCompile Include="model\LinearRE.cpp" />
     <ClCompile Include="Utils\utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="model\LDA.h" />
     <ClInclude Include="model\LinearRE.h" />
     <ClInclude Include="Utils\utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\housing.csv" />
     <None Include="data\housing.data" />
-    <None Include="data\test.csv" />
+    <None Include="data\wine.data" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

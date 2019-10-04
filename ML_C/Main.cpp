@@ -3,6 +3,7 @@
 #include<string>
 #include"Utils\utils.h"
 #include"model\LinearRE.h"
+#include"model\LDA.h"
 #include "eigen3\Eigen\Dense"
 
 using namespace std;
@@ -11,24 +12,14 @@ using namespace Eigen;
 int main()
 {
 	cout << "Hello World!" << endl;
-	
-	//准备数据
-	DataGenerator housingdata(13, 506, 506);
-	housingdata.load_data_from_data("./data/housing.data", 13);
-	//准备模型
-	LinearRE lr(housingdata.X_train, housingdata.Y_train, housingdata.X_test, housingdata.Y_test);
-	//使用最小二乘法训练
-	lr.fit();
-	cout << lr.theta << endl;
-	lr.predect_lss();
-	cout<< lr.loss_lss() << endl;
-	//使用梯度下降法训练
-	lr.fit_gd(100000, 0.000000001);
-	cout << lr.theta << endl;
-	lr.predect_gd();
-	cout << lr.loss_gd() << endl;
-
-
+	DataGenerator winedata(13, 178, 178);
+	winedata.load_wine_data("./data/wine.data", 13);
+	LDA  model(winedata.X_train, winedata.Y_train, 178);
+	model.fit();
+	double loss = model.loss(winedata.X_train, winedata.Y_train, 178);
+	cout << loss << endl;
+	//cout << "训练集合：" << winedata.X_train << endl;
+	//cout << "标签集合：" << winedata.Y_train << endl;
 	system("pause");
 	return 0;
 }

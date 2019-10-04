@@ -5,7 +5,7 @@
 
 //准备数据
 DataGenerator housingdata(13, 506, 506);
-housingdata.load_data_from_data("./data/housing.data", 13);
+housingdata.load_housing_data("./data/housing.data", 13);
 //准备模型
 LinearRE lr(housingdata.X_train, housingdata.Y_train, housingdata.X_test, housingdata.Y_test);
 //使用最小二乘法训练
